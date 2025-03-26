@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="./galaxy.jpg">
+    <title>Space Exploration</title>
+    <style>
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background: #333;
+    }
+    ul li {
+        position: relative;
+        width: 200px;
+    }
+    ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 15px;
+        display: block;
+        
+    }
+    ul li a:hover {
+        background: #555;
+        width: 100px;
+    }
+    ul li ul {
+        display: none;
+        position: absolute;
+        background: #444;
+        width: 100%;
+    }
+    ul li:hover ul {
+        display: block;
+    }
+</style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SpaceX</div>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                    <ul>
+                        <li><a href="#missions">Missions</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Explore The Final Frontier</h1>
+            <p>Journey through the cosmos and discover the wonders of space exploration</p>
+            <a href="#missions" class="cta-button">Discover More</a>
+        </div>
+    </section>
+
+    <section id="missions" class="missions">
+        <h2>Our Missions</h2>
+        <div class="mission-cards">
+            <div class="card">
+                <div class="card-image mars"></div>
+                <h3>Mars Colony</h3>
+                <p>Establishing the first human settlement on the Red Planet</p>
+            </div>
+            <div class="card">
+                <div class="card-image moon"></div>
+                <h3>Lunar Base</h3>
+                <p>Creating a permanent human presence on the Moon</p>
+            </div>
+            <div class="card">
+                <div class="card-image asteroid"></div>
+                <h3>Asteroid Mining</h3>
+                <p>Harvesting valuable resources from nearby asteroids</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Space Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Space Exploration. All rights reserved.</p>
+    </footer>
+</body>
+</html>
